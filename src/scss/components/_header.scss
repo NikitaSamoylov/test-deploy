@@ -1,0 +1,38 @@
+.header {
+  position: relative;
+  padding-top: 15px;
+  padding-bottom: 16px;
+  &__burger {
+    width: 16px;
+    display: none;
+
+    @include small-tablet {
+      display: flex;
+    }
+  }
+
+  &__content {
+    @include flex-v-sb;
+  }
+
+  &__logo {
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    transform: translateX(-50%);
+    cursor: pointer;
+    animation: logo-animation 0.5s linear;
+    &--hidden {
+      display: none;
+    }
+  }
+}
+
+@keyframes logo-animation {
+  from {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}

@@ -1,0 +1,82 @@
+.nav {
+  &__list {
+    background-color: white;
+    @include flex-v-center;
+    padding-left: 13px;
+
+    @include small-tablet {
+      display: none;
+      position: absolute;
+      top: 98%;
+      left: 50%;
+      width: 100%;
+      transform: translateX(-50%);
+      z-index: 10;
+      margin: 0;
+      padding-bottom: 100px;
+    }
+
+    &--open {
+      display: block;
+    }
+  }
+
+  &__link {
+    color: $primary-link-color;
+  }
+  &__item {
+    position: relative;
+    font-weight: 700;
+    font-size: 1.6rem;
+    line-height: 2.6rem;
+    color: $nav-item-color;
+
+    @include tablet {
+      font-size: 1.4rem;
+    }
+
+    @include small-tablet {
+      font-size: 1.6rem;
+      margin-bottom: 9px;
+      text-align: center;
+    }
+
+    &::after {
+      position: absolute;
+      top: 23px;
+      left: 0px;
+      content: "";
+      border-bottom: 2px solid black;
+      border-radius: 15%;
+      width: 0;
+      transition: 0.2s;
+    }
+
+    &:hover::after {
+      width: 100%;
+    }
+
+    &:not(:last-child) {
+      margin-right: 32px;
+      @include tablet {
+        margin-right: 20px;
+      }
+
+      @include small-tablet {
+        margin-right: 0;
+      }
+    }
+    &:nth-child(2) {
+      margin-right: 35px;
+      @include small-tablet {
+        margin-right: 0;
+      }
+    }
+    &:nth-child(3) {
+      margin-right: 36px;
+      @include small-tablet {
+        margin-right: 0;
+      }
+    }
+  }
+}

@@ -1,0 +1,38 @@
+// base
+$font-family: "Roboto", sans-serif;
+
+$content-width: 1090px;
+$container-offset: 15px;
+$container-width: $content-width + ($container-offset * 2);
+
+// background colors
+$primary-bg-color: #f0efeb;
+$secondary-bg-color: rgba(204, 204, 204, 0.6);
+$secondary-bg-color: #f0f0f0;
+// footer-background color
+$footer-bg-color: #020202;
+// button background color
+$btn-bg-color: #000;
+
+//nav colors
+$nav-item-color: #1c1b1b;
+
+// footer colors
+$footer-item-color: #fff;
+
+// titles colors
+$hero-title-color: black;
+$title-color-primary: black;
+$subtitle-color-primary: black;
+
+// button text color
+$btn-text-color: #fff;
+
+//link colors
+$primary-link-color: #1c1b1b;
+
+// breakpoints
+$tablet: 992px;
+$small-tablet: 890px;
+$portreit-tablet: 730px;
+$landscape-mobile: 570px;

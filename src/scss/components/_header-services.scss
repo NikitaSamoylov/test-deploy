@@ -1,0 +1,40 @@
+.services {
+  &__list {
+    @include flex-v-center;
+    padding-right: 13px;
+    @include small-tablet {
+      display: none;
+      position: absolute;
+      top: 453%;
+      right: 48.5%;
+      padding-right: 0;
+      transform: translateX(50%);
+      z-index: 20;
+    }
+
+    &--open {
+      display: flex;
+    }
+
+    animation: logo-animation 0.5s linear;
+  }
+
+  &__item {
+    cursor: pointer;
+    &:not(:last-child) {
+      margin-right: 24px;
+    }
+    &:last-child {
+      margin-right: 3px;
+    }
+  }
+}
+
+@keyframes logo-animation {
+  from {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
