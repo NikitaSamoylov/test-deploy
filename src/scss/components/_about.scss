@@ -1,0 +1,26 @@
+.about {
+  padding-top: 57.81px;
+  padding-bottom: 88.69px;
+
+  &__container {
+    transform: translateX(-1px);
+  }
+
+  &__title {
+    margin-bottom: 26.69px;
+    padding-left: 22px;
+  }
+  &__descr {
+    font-weight: 400;
+    font-size: 2rem;
+    line-height: 2.3rem;
+    text-align: center;
+    max-width: 656px;
+    margin: 0 auto;
+    color: black;
+    padding-left: 22px;
+    &--top {
+      margin-bottom: 47px;
+    }
+  }
+}

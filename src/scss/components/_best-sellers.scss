@@ -1,0 +1,32 @@
+.best-sellers {
+  padding-bottom: 247.95px;
+  &__title {
+    margin-bottom: 51.69px;
+    padding-left: 19px;
+  }
+  &__list {
+    @include flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    padding-left: 25px;
+
+    @include small-laptop {
+      justify-content: space-around;
+    }
+  }
+
+  &__item:not(:last-child) {
+    @include small-laptop {
+      margin-bottom: 30px;
+    }
+  }
+  &__item:nth-child(2) {
+    transform: translateX(-5px);
+    margin-left: 15px;
+    margin-right: 15px;
+  }
+
+  &__item:last-child {
+    transform: translateX(-7px);
+  }
+}

@@ -4,14 +4,26 @@
   font-weight: 400;
   font-size: 1.7rem;
   line-height: 2rem;
-  padding: 7px 23px 9px 23px;
+  padding: 7px 29px 9px 23px;
   border: 1px;
   border-radius: 100px;
+  transform: translateX(-1px);
   transition: transform 0.2s;
   &:hover {
     transform: scale(1.1);
   }
   &:click {
     transform: scale(1.1);
+  }
+
+  &-link {
+    display: block;
+    font-weight: 700;
+    font-size: 1.7rem;
+    line-height: 2rem;
+    text-decoration-line: underline;
+    color: #000000;
+    background: transparent;
+    border: none;
   }
 }

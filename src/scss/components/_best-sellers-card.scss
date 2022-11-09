@@ -1,0 +1,50 @@
+.sellers-card {
+  max-width: 309px;
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-left: 4px;
+    &--short {
+      padding-left: 1px;
+    }
+  }
+  &__title {
+    font-weight: 700;
+    font-size: 1.7rem;
+    line-height: 2 rem;
+    text-align: center;
+    color: title-color-primary;
+    max-width: 160px;
+    padding-top: 18px;
+    &--short {
+      padding-top: 25px;
+    }
+  }
+
+  &__price {
+    display: inline-block;
+    font-weight: 400;
+    font-size: 1.7rem;
+    line-height: 2rem;
+    text-align: center;
+    color: #000000;
+    padding-top: 17px;
+  }
+
+  &__link {
+    text-align: center;
+    padding-top: 10.05px;
+  }
+
+  &__img {
+    width: 314px;
+    height: 429px;
+
+    &--short {
+      width: 309px;
+      height: 422px;
+    }
+  }
+}
