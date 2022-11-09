@@ -14,10 +14,17 @@
   font-weight: 700;
   font-size: 3.6rem;
   line-height: 4.2rem;
-  text-align: center;
   color: $title-color-primary;
 
   &--center {
     text-align: center;
+  }
+
+  &--left {
+    text-align: left;
+  }
+
+  &--right {
+    text-align: right;
   }
 }
