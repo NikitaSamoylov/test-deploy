@@ -41,10 +41,18 @@
   &__img {
     width: 314px;
     height: 429px;
+    @include landscape-mobile {
+      width: 100%;
+      height: auto;
+    }
 
     &--short {
       width: 309px;
       height: 422px;
+      @include landscape-mobile {
+        width: 100%;
+        height: auto;
+      }
     }
   }
 }

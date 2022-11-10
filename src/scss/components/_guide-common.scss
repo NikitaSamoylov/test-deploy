@@ -2,7 +2,7 @@
   &__container {
     display: flex;
     padding-top: 76px;
-    padding-bottom: 51px;
+    padding-bottom: 52px;
     @include small-tablet {
       flex-direction: column;
       align-items: center;
@@ -22,6 +22,7 @@
     padding-left: 50px;
     @include small-tablet {
       padding-left: 24px;
+      padding-left: 0;
       text-align: center;
     }
 
@@ -35,7 +36,7 @@
       }
     }
     &--padding-top {
-      padding-top: 94px !important;
+      padding-top: 92px !important;
       @include small-tablet {
         padding-top: 70px !important;
       }
@@ -84,10 +85,10 @@
   &__img {
     padding-left: 23px;
     width: 408px;
-    height: 525px;
+    // height: 525px;
     @include small-tablet {
       padding-left: 0 !important;
-      width: 385px;
+      // width: 385px;
     }
   }
 }
