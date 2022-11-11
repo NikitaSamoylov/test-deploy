@@ -1,0 +1,77 @@
+.features {
+  padding-top: 189.67px;
+  padding-bottom: 163.33px;
+  &__title {
+    margin: -2px auto 0 auto;
+    font-weight: 400;
+    max-width: 464px;
+    margin-bottom: 165px;
+    padding-left: 22px;
+  }
+
+  &__list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    row-gap: 207.16px;
+    align-items: center;
+    justify-items: center;
+
+    @include portreit-tablet {
+      grid-template-columns: repeat(2, 1fr);
+      justify-content: space-around;
+    }
+    @include landscape-mobile {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  &__item {
+    position: relative;
+    font-weight: 700;
+    font-size: 3rem;
+    line-height: 3.5rem;
+    text-align: center;
+    color: #000000;
+    max-width: 231px;
+    padding-left: 21px;
+
+    &:nth-child(5) {
+      max-width: 187px !important;
+    }
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: -96px;
+      left: 50%;
+      transform: translateX(-35%);
+      width: 70px;
+      height: 70px;
+      background-color: grey;
+      border-radius: 50%;
+      display: block;
+    }
+    &--light-green::before {
+      background-color: #21f7ec;
+    }
+
+    &--green::before {
+      background-color: #33d3bc;
+    }
+
+    &--dark-green::before {
+      background-color: #18a5c6;
+    }
+
+    &--brown::before {
+      background-color: #d38f62;
+    }
+
+    &--red::before {
+      background-color: #f94c43;
+    }
+    &--violet::before {
+      background-color: #d399ff;
+    }
+  }
+}
