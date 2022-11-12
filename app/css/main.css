@@ -834,4 +834,123 @@ input::-webkit-search-decoration, input::-webkit-search-cancel-button, input::-w
 .features__item--violet::before {
   background-color: #d399ff;
 }
+
+.celebrities {
+  padding-bottom: 51.17px;
+}
+.celebrities::after {
+  content: "";
+  display: block;
+  background-color: #f0f0f0;
+  width: 100%;
+  height: 480px;
+  z-index: 60;
+  position: relative;
+  z-index: -1;
+  top: -428px;
+}
+.celebrities__title {
+  max-width: 705px;
+  margin: 0 auto 102.33px auto;
+  -webkit-transform: translateX(12px);
+  -ms-transform: translateX(12px);
+  transform: translateX(12px);
+}
+.celebrities__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+.celebrities__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+.celebrities-card__img {
+  padding-left: 23px;
+  margin-bottom: 38.33px;
+}
+.celebrities-card__img--short {
+  margin-bottom: 38.33px;
+}
+.celebrities-card__speech {
+  font-weight: 700;
+  font-size: 2.2rem;
+  line-height: 2.6rem;
+  text-align: center;
+  letter-spacing: 0.6px;
+  color: #000000;
+  max-width: 282px;
+  margin-bottom: 30px;
+  padding-left: 25px;
+  padding-top: 0;
+}
+.celebrities-card__speech--wide {
+  max-width: 293px;
+  padding-left: 22px;
+  padding-top: -9px;
+  letter-spacing: 1.4px;
+  -webkit-transform: translateY(-3px);
+  -ms-transform: translateY(-3px);
+  transform: translateY(-3px);
+  line-height: 2.9rem;
+}
+.celebrities-card__speech--man {
+  -webkit-transform: translateY(-7px);
+  -ms-transform: translateY(-7px);
+  transform: translateY(-7px);
+}
+.celebrities-card__name {
+  font-weight: 400;
+  font-size: 1.9rem;
+  line-height: 2.2rem;
+  text-align: center;
+  padding-left: 25px;
+}
+.celebrities-card__name--man {
+  -webkit-transform: translateY(2px);
+  -ms-transform: translateY(2px);
+  transform: translateY(2px);
+}
+.celebrities-card__occupation {
+  font-weight: 400;
+  text-align: center;
+  font-size: 2rem;
+  line-height: 2.3rem;
+  padding-left: 25px;
+  margin-bottom: 45px;
+}
+.celebrities-card__occupation--man {
+  -webkit-transform: translate(3px, 6px);
+  -ms-transform: translate(3px, 6px);
+  transform: translate(3px, 6px);
+}
+.celebrities-card__link {
+  font-weight: 700;
+  font-size: 1.8rem;
+  line-height: 2.1rem;
+  text-align: center;
+  -webkit-text-decoration-line: underline;
+  text-decoration-line: underline;
+  color: #000000;
+  padding-left: 25px;
+}
+.celebrities-card__link--man {
+  -webkit-transform: translateY(4px);
+  -ms-transform: translateY(4px);
+  transform: translateY(4px);
+}
 /*# sourceMappingURL=main.css.map */
