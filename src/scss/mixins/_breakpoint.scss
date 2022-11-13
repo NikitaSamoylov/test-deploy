@@ -24,6 +24,12 @@
   }
 }
 
+@mixin small-portreit-tablet {
+  @media (max-width: $small-portreit-tablet) {
+    @content;
+  }
+}
+
 @mixin landscape-mobile {
   @media (max-width: $landscape-mobile) {
     @content;

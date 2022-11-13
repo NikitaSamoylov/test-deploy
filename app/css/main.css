@@ -836,7 +836,7 @@ input::-webkit-search-decoration, input::-webkit-search-cancel-button, input::-w
 }
 
 .celebrities {
-  padding-bottom: 51.17px;
+  position: relative;
 }
 .celebrities::after {
   content: "";
@@ -845,9 +845,19 @@ input::-webkit-search-decoration, input::-webkit-search-cancel-button, input::-w
   width: 100%;
   height: 480px;
   z-index: 60;
-  position: relative;
+  position: absolute;
   z-index: -10;
-  top: -428px;
+  top: 373px;
+}
+@media (max-width: 890px) {
+  .celebrities::after {
+    top: 1056px;
+  }
+}
+@media (max-width: 651px) {
+  .celebrities::after {
+    top: 1740px;
+  }
 }
 .celebrities__title {
   max-width: 705px;
@@ -968,5 +978,120 @@ input::-webkit-search-decoration, input::-webkit-search-cancel-button, input::-w
   -webkit-transform: translateY(4px);
   -ms-transform: translateY(4px);
   transform: translateY(4px);
+}
+
+.contacts {
+  padding-top: 131px;
+  padding-left: 25px;
+  padding-bottom: 87.83px;
+}
+.contacts__title {
+  margin: 0 auto 9px auto;
+}
+.contacts__subtitle {
+  display: block;
+  font-weight: 700;
+  font-size: 1.7rem;
+  line-height: 2rem;
+  text-align: center;
+  color: black;
+  max-width: 496px;
+  margin: 0 auto 25.83px auto;
+}
+.contacts__form {
+  margin: 0 auto 16px auto;
+}
+.contacts__button {
+  display: block;
+  margin: 0 auto;
+  font-weight: 400;
+  font-size: 1.4rem;
+  line-height: 1.6rem;
+  text-align: center;
+  padding-top: 9px;
+  padding-left: 28px;
+  padding-right: 26px;
+}
+
+.contacts-form {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[2];
+  grid-template-columns: repeat(2, 1fr);
+  grid-column-gap: 60px;
+  grid-row-gap: 18px;
+  max-width: 366px;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+@media (max-width: 570px) {
+  .contacts-form {
+    grid-column-gap: 0;
+  }
+}
+.contacts-form__item {
+  border: 1px solid #000000;
+  border-radius: 0px;
+  padding: 15px 27px 11px 8px;
+}
+.contacts-form__item::-webkit-input-placeholder {
+  font-weight: 400;
+  font-size: 1.4rem;
+  line-height: 1.6rem;
+  text-align: center;
+  color: #a0a0a0;
+  text-align: left;
+}
+.contacts-form__item::-moz-placeholder {
+  font-weight: 400;
+  font-size: 1.4rem;
+  line-height: 1.6rem;
+  text-align: center;
+  color: #a0a0a0;
+  text-align: left;
+}
+.contacts-form__item:-ms-input-placeholder {
+  font-weight: 400;
+  font-size: 1.4rem;
+  line-height: 1.6rem;
+  text-align: center;
+  color: #a0a0a0;
+  text-align: left;
+}
+.contacts-form__item::-ms-input-placeholder {
+  font-weight: 400;
+  font-size: 1.4rem;
+  line-height: 1.6rem;
+  text-align: center;
+  color: #a0a0a0;
+  text-align: left;
+}
+.contacts-form__item::placeholder {
+  font-weight: 400;
+  font-size: 1.4rem;
+  line-height: 1.6rem;
+  text-align: center;
+  color: #a0a0a0;
+  text-align: left;
+}
+.contacts-form__item--email {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-column: 1/3;
+}
+@media (max-width: 570px) {
+  .contacts-form__item--first-name {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 2;
+    grid-column: 1/3;
+  }
+}
+@media (max-width: 570px) {
+  .contacts-form__item--last-name {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 2;
+    grid-column: 1/3;
+  }
 }
 /*# sourceMappingURL=main.css.map */

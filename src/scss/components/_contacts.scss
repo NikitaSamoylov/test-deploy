@@ -1,0 +1,75 @@
+.contacts {
+  padding-top: 131px;
+  padding-left: 25px;
+  padding-bottom: 87.83px;
+  &__title {
+    margin: 0 auto 9px auto;
+  }
+
+  &__subtitle {
+    display: block;
+    font-weight: 700;
+    font-size: 1.7rem;
+    line-height: 2rem;
+    text-align: center;
+    color: $subtitle-color-primary;
+    max-width: 496px;
+    margin: 0 auto 25.83px auto;
+  }
+
+  &__form {
+    margin: 0 auto 16px auto;
+  }
+
+  &__button {
+    display: block;
+    margin: 0 auto;
+    font-weight: 400;
+    font-size: 1.4rem;
+    line-height: 1.6rem;
+    text-align: center;
+    padding-top: 9px;
+    padding-left: 28px;
+    padding-right: 26px;
+  }
+}
+.contacts-form {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-column-gap: 60px;
+  grid-row-gap: 18px;
+  max-width: 366px;
+  justify-content: center;
+  @include landscape-mobile {
+    grid-column-gap: 0;
+  }
+  &__item {
+    border: 1px solid #000000;
+    border-radius: 0px;
+    padding: 15px 27px 11px 8px;
+
+    &::placeholder {
+      font-weight: 400;
+      font-size: 1.4rem;
+      line-height: 1.6rem;
+      text-align: center;
+      color: $placeholder-color;
+      text-align: left;
+    }
+
+    &--email {
+      grid-column: 1/3;
+    }
+
+    &--first-name {
+      @include landscape-mobile {
+        grid-column: 1/3;
+      }
+    }
+    &--last-name {
+      @include landscape-mobile {
+        grid-column: 1/3;
+      }
+    }
+  }
+}
