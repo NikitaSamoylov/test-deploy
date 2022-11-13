@@ -846,7 +846,7 @@ input::-webkit-search-decoration, input::-webkit-search-cancel-button, input::-w
   height: 480px;
   z-index: 60;
   position: relative;
-  z-index: -1;
+  z-index: -10;
   top: -428px;
 }
 .celebrities__title {
@@ -867,6 +867,17 @@ input::-webkit-search-decoration, input::-webkit-search-cancel-button, input::-w
   -ms-flex-pack: justify;
   justify-content: space-between;
 }
+@media (max-width: 890px) {
+  .celebrities__list {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-flow: row wrap;
+    flex-flow: row wrap;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+  }
+}
 .celebrities__item {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -878,6 +889,11 @@ input::-webkit-search-decoration, input::-webkit-search-cancel-button, input::-w
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+}
+@media (max-width: 890px) {
+  .celebrities__item:not(:last-child) {
+    margin-bottom: 45px;
+  }
 }
 .celebrities-card__img {
   padding-left: 23px;
